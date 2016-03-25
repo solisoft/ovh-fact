@@ -20,4 +20,7 @@ APP_SECRET  = "<YOUR SECRET>"
 CONSUMER_KEY= "<YOUR CONSUMER KEY>"
 ````
 
-* ruby process.rb
+
+## Usage
+
+`ruby process.rb`
