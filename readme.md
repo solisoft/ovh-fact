@@ -1,6 +1,6 @@
 # OVH-FACT
 
-This tool allow you to download all your OVH.com invoices at once.
+This tool allow you to download all your OVH.com invoices.
 
 ## Installation
 
