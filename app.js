@@ -12,6 +12,7 @@ var ovh = require('ovh')({
 var array_index = 0
 var invoices = []
 
+// This method allow to work synchronously and avoid flood and timeout issue
 function getInfos(array_index, invoices) {
   if(array_index < invoices.length) {
     invoice = invoices[array_index]
@@ -20,10 +21,7 @@ function getInfos(array_index, invoices) {
         console.log(invoice + ";" + file.pdfUrl + ";" + file.date + ";" + file.priceWithoutTax.value.replace(".", ","))
         array_index++;
         getInfos(array_index, invoices)
-        
-      } else {
-        
-      }      
+      }    
     })  
   }
 }
