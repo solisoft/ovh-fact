@@ -24,3 +24,7 @@ CONSUMER_KEY= "<YOUR CONSUMER KEY>"
 ## Usage
 
 `ruby process.rb`
+
+## Todo
+
+* Add date range to filter invoices export
