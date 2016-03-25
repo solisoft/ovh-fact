@@ -23,7 +23,7 @@ CONSUMER_KEY= "<YOUR CONSUMER KEY>"
 
 ## Usage
 
-* `node app.j` will generate a list.csv file containing all your invoices (take some times)
+* `node app.js > list.csv` will generate a list.csv file containing all your invoices (take some times)
 * `ruby process.rb 2016` will export all 2016 invoices from the list.csv as PDF 
 
 ## Todo

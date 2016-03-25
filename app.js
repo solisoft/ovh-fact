@@ -1,7 +1,5 @@
 require('dotenv').config();
 var https   = require('https');
-var _ = require('underscore');
-var fs = require("fs");
 
 var ovh = require('ovh')({
   appKey: process.env.APP_KEY,
