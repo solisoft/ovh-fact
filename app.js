@@ -9,7 +9,6 @@ var ovh = require('ovh')({
   consumerKey: process.env.CONSUMER_KEY
 });
 
-var total = 0
 var array_index = 0
 var invoices = []
 
@@ -18,8 +17,7 @@ function getInfos(array_index, invoices) {
     invoice = invoices[array_index]
     ovh.request('GET', '/me/bill/'+ invoice, function (err, file) {
       if(err == null) {
-        console.log(invoice + ";" + file.pdfUrl + ";" + file.date + ";" + file.priceWithoutTax.value)
-        total += file.priceWithoutTax.value
+        console.log(invoice + ";" + file.pdfUrl + ";" + file.date + ";" + file.priceWithoutTax.value.replace(".", ","))
         array_index++;
         getInfos(array_index, invoices)
         
