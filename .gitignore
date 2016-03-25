@@ -2,4 +2,4 @@
 .env
 invoices/
 node_modules/
-list.txt
+list.csv
