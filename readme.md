@@ -4,7 +4,7 @@ This tool allow you to download all your OVH.com invoices.
 
 ## Installation
 
-* You need Ruby 2.x.x and nodeJS 5.x.x
+* You need Ruby 2.x.x and nodeJS 9.x.x
 * Clone this repository and go to the cloned folder
 * npm install
 
@@ -33,7 +33,7 @@ CONSUMER_KEY= "<YOUR CONSUMER KEY>"
 ## Usage
 
 * `node app.js > list.csv` will generate a list.csv file containing all your invoices (take some times)
-* `ruby process.rb 2016` will export all 2016 invoices from the list.csv as PDF
+* `ruby process.rb 2016` will export all 2017 invoices from the list.csv as PDF
 
 ## Todo
 
