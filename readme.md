@@ -14,7 +14,7 @@ Go to [https://api.ovh.com/createToken/?GET=/me/*](https://api.ovh.com/createTok
 Then create a .env file in your folder
 
 ````
-APP_ENDPOINT     = "<YOUR APP ENDPOINT>"
+APP_ENDPOINT = "<YOUR APP ENDPOINT>"
 APP_KEY     = "<YOUR APP KEY>"
 APP_SECRET  = "<YOUR SECRET>"
 CONSUMER_KEY= "<YOUR CONSUMER KEY>"
@@ -33,7 +33,7 @@ CONSUMER_KEY= "<YOUR CONSUMER KEY>"
 ## Usage
 
 * `node app.js > list.csv` will generate a list.csv file containing all your invoices (take some times)
-* `ruby process.rb 2016` will export all 2017 invoices from the list.csv as PDF
+* `ruby process.rb 2017` will export all 2017 invoices from the list.csv as PDF
 
 ## Todo
 
