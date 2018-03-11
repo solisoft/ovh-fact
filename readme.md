@@ -10,8 +10,7 @@ This tool allow you to download all your OVH.com invoices.
 
 ## Configuration
 
-Go to https://api.ovh.com/createToken/?GET=/me/* to generate new credentials.
-
+Go to [https://api.ovh.com/createToken/?GET=/me/*](https://api.ovh.com/createToken/?GET=/me/*) to generate new credentials.
 Then create a .env file in your folder
 
 ````
@@ -24,7 +23,7 @@ CONSUMER_KEY= "<YOUR CONSUMER KEY>"
 ## Usage
 
 * `node app.js > list.csv` will generate a list.csv file containing all your invoices (take some times)
-* `ruby process.rb 2016` will export all 2016 invoices from the list.csv as PDF 
+* `ruby process.rb 2016` will export all 2016 invoices from the list.csv as PDF
 
 ## Todo
 

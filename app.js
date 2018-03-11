@@ -2,6 +2,7 @@ require('dotenv').config();
 var https   = require('https');
 
 var ovh = require('ovh')({
+  endpoint: 'ovh-eu',
   appKey: process.env.APP_KEY,
   appSecret: process.env.APP_SECRET,
   consumerKey: process.env.CONSUMER_KEY
@@ -16,11 +17,12 @@ function getInfos(array_index, invoices) {
     invoice = invoices[array_index]
     ovh.request('GET', '/me/bill/'+ invoice, function (err, file) {
       if(err == null) {
-        console.log(invoice + ";" + file.pdfUrl + ";" + file.date + ";" + file.priceWithoutTax.value.replace(".", ","))
+        console.log(file)
+        console.log(invoice + ";" + file.pdfUrl + ";" + file.date + ";" + file.priceWithoutTax.value)
         array_index++;
         getInfos(array_index, invoices)
-      }    
-    })  
+      }
+    })
   }
 }
 
