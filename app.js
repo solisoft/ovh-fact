@@ -2,7 +2,7 @@ require('dotenv').config();
 var https   = require('https');
 
 var ovh = require('ovh')({
-  endpoint: 'ovh-eu',
+  endpoint: process.env.APP_ENDPOINT,
   appKey: process.env.APP_KEY,
   appSecret: process.env.APP_SECRET,
   consumerKey: process.env.CONSUMER_KEY

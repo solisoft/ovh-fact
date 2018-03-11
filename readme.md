@@ -14,11 +14,21 @@ Go to [https://api.ovh.com/createToken/?GET=/me/*](https://api.ovh.com/createTok
 Then create a .env file in your folder
 
 ````
+APP_ENDPOINT     = "<YOUR APP ENDPOINT>"
 APP_KEY     = "<YOUR APP KEY>"
 APP_SECRET  = "<YOUR SECRET>"
 CONSUMER_KEY= "<YOUR CONSUMER KEY>"
 ````
 
+### About endpoints
+
+* OVH Europe: ovh-eu (default)
+* OVH North-America: ovh-ca
+* RunAbove: runabove-ca
+* SoYouStart Europe: soyoustart-eu
+* SoYouStart North-America: soyoustart-ca
+* Kimsufi Europe: kimsufi-eu
+* Kimsufi North-America: kimsufi-ca
 
 ## Usage
 
